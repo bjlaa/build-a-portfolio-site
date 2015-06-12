@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container bg"> <!--Where the background is set-->
+		<div class="container all">
+
+			<div class="row header"><!--header and the navigation menu/hamburger-->
+				 <a id="menu" class="header__menu">
+          			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            			<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          			</svg><!--Hamburger icon-->
+        		</a>
+				<h1 class="text-center">Benjamin Arias</h1>
+				<h3 class="text-center">Front-End Web Developer</h3>
+			</div>
+			<div id="drawer" class="row banner">
+		    	<div class="navigation text-center">
+		    		<div class="links"><a href="">PROJECTS</a></div>
+		    		<div class="links"><a href="">RESUME</a></div>
+		    		<div class="links"><a href="">CONTACT</a></div>
+		    	</div>
+			</div> 
+
+			<main><!--Projects-->
+				<div class="container project">
+					
+						<div class="col-md-6 fst">
+							<figure>
+								<img src="images/vert.jpg" alt="Article">
+							</figure>
+							<footer class="footpro"><a href="">First Project</a></footer>
+						</div>
+						<div class="col-md-6 scd">
+							<figure>
+								<img src="images/vert.jpg" alt="Article">
+							</figure>
+							<footer class="footpro"><a href="">Second Project</a></footer>
+						</div>
+					
+					
+						<div class="col-md-6 trd">
+							<figure>
+								<img src="images/vert.jpg" alt="Article">
+							</figure>
+							<footer class="footpro"><a href="">Third Project</a></footer>
+						</div>
+						<div class="col-md-6 fth">
+							<figure>
+								<img src="images/vert.jpg" alt="Article">
+							</figure>
+							<footer class="footpro"><a href="">Fourth Project</a></footer>
+						</div>	
+				</div>
+
+				<footer class="footpage">
+					<div class="foottwitter"><a href="">Twitter</a></div>
+					<div class="footface"><a href="">Facebook</a></div>
+					<div class="footgoogle"><a href="">Google Plus</a></div>
+				</footer>
+			</main>
+
+		</div>
+	</div>
+	<!--Javascript for the hamburger menu-->
+	<script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.navigation');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+</body>
