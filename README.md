@@ -5,7 +5,7 @@ and works on mobile, tablet, and desktop browsers.
 
 In order to access it in your browser:
 
-* click in the following link redirecting to my [Github Pages page for this project](bjlaa.github.io/build-a-portfolio-site).
+* click in the following link redirecting to my [Github Pages page for this project](http://bjlaa.github.io/build-a-portfolio-site).
 
 or
 
