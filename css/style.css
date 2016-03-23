@@ -22,6 +22,16 @@ header, nav, footer, section, article, div {
 
 a{
 	color:rgb(255,250,240);
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+a:focus {
+	text-decoration: none;
+}
+a:link {
+	text-decoration: none;
 }
 
 img{
@@ -50,14 +60,12 @@ img{
 h1{
 	padding-top: 2%;
 	color: rgb(255,250,240);
-	border-top: solid rgb(255,250,240) 4px;
 	font-family: 'Oxygen', sans-serif;
 	font-size: 360%;
 }
 
 h3{
 	color: rgb(255,250,240);
-	border-bottom: solid rgb(255,250,240) 4px;
 	font-size: 140%;
 	padding-top: 1%;
 	padding-bottom: 2%;
@@ -73,18 +81,27 @@ h3{
 
 .links{
 	width:33.3%;
-	background-color: black;
+	background-color: rgba(0,0,0,0.8);
 	color: rgb(255,250,240);
 	font-family: 'Oxygen', sans-serif;
-	font-size: 80%;
+	font-size: 120%;
+	font-weight: 300;
 	padding: 15px;
-	border-right: solid rgb(255,250,240) 1px;
-	border-left: solid rgb(255,250,240) 1px;
-	border-top: solid rgb(255,250,240) 1px;
+	border-right: solid rgba(0,0,0,0.6) 1px;
+	cursor: pointer;
+}
+.links:last-child {
+	border-right: none;
+}
+.links:hover{
+	background-color: rgb(255,250,240);
+	color:rgba(0,0,0,0.85); 
+	transition: all .3s ease-in-out;
 }
 
 .bg{
-	background-image: url(ny.jpg);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+						url(ny.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -149,6 +166,7 @@ h3{
 
 main{
 	width: 100%;
+	border-top: 1px solid rgba(0,0,0,0.85);
 }
 .footpage{
 	display: flex;
